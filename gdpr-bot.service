@@ -1,0 +1,14 @@
+[Unit]
+Description=Cyber Shift GDPR Bot
+After=network.target
+
+[Service]
+Type=simple
+User=gdprbot
+ExecStart=/home/gdprbot/gdpr-bot
+WorkingDirectory=/home/gdprbot
+Environment=GIN_MODE=release
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
