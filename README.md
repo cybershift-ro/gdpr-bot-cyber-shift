@@ -21,7 +21,7 @@ GDPR Bot offers a complete list of all sanctions announced by [ANSPDCP Dataprote
 
 # Demo
   
-  A live version is available at [gdpr.cybershif.dev](https://gdpr.cybershif.dev/rss).
+  A live version is available at [gdpr.cybershift.dev](https://gdpr.cybershift.dev/rss).
 
 # Features
   - Fast & flexible crawler with the help of [Colly](https://github.com/gocolly/colly)
