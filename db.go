@@ -69,7 +69,7 @@ func sanctionsToJSON() string {
 
 	records, _ := app.Dao().FindRecordsByExpr(sanction_document, dbx.Not(dbx.HashExp{"company_name": "unknown"}))
 
-	all_sanctions := make([]map[string]any, len(records))
+	all_sanctions := make([]map[string]any, 0, len(records))
 
 	for _, s := range records {
 		all_sanctions = append(all_sanctions, s.Data())

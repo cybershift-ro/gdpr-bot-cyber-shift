@@ -27,6 +27,8 @@ GDPR Bot offers a complete list of all sanctions announced by [ANSPDCP Dataprote
   - Fast & flexible crawler with the help of [Colly](https://github.com/gocolly/colly)
   - Web server built-in
   - Sanctions feed available in 3 formats: [RSS][2], [ATOM][3] and [JSON][4].
+  - Structured information about [sanctions found][5]
+  - Integrated backend with front-end - [Pocket Base](https://pocketbase.io/)
   - Compatible with any RSS reader
   - Easy to self-host
 
@@ -38,4 +40,4 @@ GDPR Bot offers a complete list of all sanctions announced by [ANSPDCP Dataprote
 [2]: <https://gdpr.cybershift.dev/rss>  "RSS Feed of GDPR Bot"
 [3]: <https://gdpr.cybershift.dev/atom> "ATOM Feed of GDPR Bot"
 [4]: <https://gdpr.cybershift.dev/json> "JSON Feed of GDPR Bot"
-
+[5]: <https://gdpr.cybershift.dev/sanctions> "JSON Data of Fines found by GDPR Bot"
