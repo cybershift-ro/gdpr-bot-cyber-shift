@@ -3,6 +3,7 @@ package main
 import (
 	"log"
 	"time"
+	"os"
 
 	"github.com/gin-contrib/cache/persistence"
 	"github.com/pocketbase/pocketbase"
@@ -28,8 +29,16 @@ func main() {
 	// Start scapper in a separate routine
 	go webScrapper()
 
+	// Load port from environment
+	apiPort := os.Getenv("PUBLIC_API_PORT")
+
+	// Choose default port if not set
+	if apiPort == "" {
+		apiPort = "8091"
+	}
+
 	// Start HTTP API in a separate routine
-	go router.Run(":3001")
+	go router.Run(":" + apiPort)
 
 	// Use the main thread to run the backend
 	if err := app.Start(); err != nil {
